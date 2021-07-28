@@ -21,3 +21,27 @@ The list of lap times should reset when a new timer starts.
 ____
 
 Once finished, make a git commit and continue to the third task.
+
+# Implementation
+
+## Screenshots
+
+Stopwatch Running | Stopwatch Stopped
+--- | ---
+![Running](./media/running.png?raw=true "Running") | ![Stopped](./media/stopped.png?raw=true "Stopped")
+
+## Implementation
+
+- [flutter_bloc](https://pub.dev/packages/flutter_bloc) for state management.
+
+Code was tested on Android, Windows desktop and Flutter web.
+
+The `stopwatch running in the background functionality` can be tested by doing a
+hot restart (if running on an emulator).
+
+## Testing
+
+```bash
+$ flutter test test
+00:08 +7: All tests passed!
+```
