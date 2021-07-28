@@ -19,3 +19,24 @@ Use the state management approach you are most conmfortable with.
 ____
 
 Once finished, make a git commit and continue to the second task.
+
+# Implementation
+
+## Screenshots
+
+Stopwatch Running | Stopwatch Stopped
+--- | ---
+![Running](./media/running.png?raw=true "Running") | ![Stopped](./media/stopped.png?raw=true "Stopped")
+
+## Implementation
+
+- [flutter_bloc](https://pub.dev/packages/flutter_bloc) for state management.
+
+Code was tested on Android, Windows desktop and Flutter web.
+
+## Testing
+
+```bash
+$ flutter test test
+00:11 +3: All tests passed!
+```
