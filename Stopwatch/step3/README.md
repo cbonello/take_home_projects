@@ -1,4 +1,4 @@
-# Third Task
+# 1. Task Description
 
 In the third (and final) task we will make some quality of life improvements
 to the app:
@@ -23,18 +23,21 @@ ____
 
 After you are finished, the project is ready to be submitted!
 
-## Implementation
+# 2. Implementation
 
-- [flutter_bloc](https://pub.dev/packages/flutter_bloc) for state management.
+In this last step we’ll have to deal with a recurring feature of take-home
+tests: JSON serialization / deserialization.
+[`json_serializable`](https://pub.dev/packages/json_serializable)
+is usually my go to package for JSON, but to save time I simply took advantage
+of the
+[`Dart Data Class Generator`](https://marketplace.visualstudio.com/items?itemName=BendixMa.dart-data-class-generator)
+extension of vscode to quickly generate `toJson()` and `fromJson()` functions
+for my list of LapModel (see `laps_cubit.dart` file.)
 
-Code was tested on Android, Windows desktop and Flutter web.
+The start time and laps were saved to local storage using the
+[`shared_preference`](https://pub.dev/packages/shared_preferences) package.
+I probably would have used [`sembast`](https://pub.dev/packages/sembast)
+in a production app since `shared_preference`must not be used for storing
+critical data. However, it is fine for our demo.
 
-The `stopwatch running in the background functionality` can be tested by doing a
-hot restart (if running on an emulator).
-
-## Testing
-
-```bash
-$ flutter test test
-00:08 +7: All tests passed!
-```
+I spent about 1 hour on this step.
