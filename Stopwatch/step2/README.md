@@ -1,4 +1,4 @@
-# Second Task
+# 1. Task Description
 
 In the second task we will take the stopwatch and add some new features:
 
@@ -22,21 +22,27 @@ ____
 
 Once finished, make a git commit and continue to the third task.
 
-# Implementation
+# 2. Implementation
 
-## Screenshots
+## 2.1 State Management
 
-Stopwatch Running | Stopwatch Stopped
+The laps are managemened by the `LapsCubit` located in
+`src/stopwatch/blocs/laps/laps_cubit.dart` and a new `LapModel` class was
+introduced to record a lap.
+
+## 2.2 Screenshots
+
+Here is the end result: 
+
+Stopwatch Stopped | Stopwatch Running
 --- | ---
-![Running](./media/running.png?raw=true "Running") | ![Stopped](./media/stopped.png?raw=true "Stopped")
+![Stopped](./media/stopped.png?raw=true "Stopped") | ![Running](./media/running.png?raw=true "Running")
 
-## Implementation
+## 2.3 Testing
 
-- [flutter_bloc](https://pub.dev/packages/flutter_bloc) for state management.
-
-Code was tested on Android, Windows desktop and Flutter web.
-
-## Testing
+I spent about 75 minutes on this step. It's probably a bit too much but I
+added a feature to scroll the list of laps to display the last lap added.
+I cou;d have saved 15 minutes.
 
 ```bash
 $ flutter test test
