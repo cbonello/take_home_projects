@@ -1,4 +1,4 @@
-# First Task
+# 1. Task Description
 
 Your first task is to create a simple home page containing the following elements:
 
@@ -20,21 +20,43 @@ ____
 
 Once finished, make a git commit and continue to the second task.
 
-# Implementation
+# 2. Implementation
 
-## Screenshots
+## 2.1 State Management
 
-Stopwatch Running | Stopwatch Stopped
+My go to state management approach is BLoC. And I have used the
+[flutter_bloc](https://pub.dev/packages/flutter_bloc) library.
+
+The timer is managed by a [`Cubit`](https://bloclibrary.dev/#/coreconcepts?id=cubit)
+and a [`Stream.periodic()`](https://api.flutter.dev/flutter/dart-async/Stream/Stream.periodic.html)
+with a one second period (the task description does not mention any periodicity
+for the timer.)
+
+## 2.2 Design
+
+I chose a design from
+[Rahmat Raditya](https://dribbble.com/shots/11164774-Clock-Apps-Design-Exploration)
+because I like the color scheme. But I am not planning to replicate the design.
+I'll keep things simple.
+
+![Design](./media/design.png?raw=true "Design")
+
+## 2.3 Screenshots
+
+Here is the end result. It does not exactely look like
+[Rahmat Raditya](https://dribbble.com/shots/11164774-Clock-Apps-Design-Exploration)
+color scheme yet, but we'll fix it in the next step.
+
+I spent about 45 minutes on this step.
+
+Stopwatch Stopped | Stopwatch Running
 --- | ---
-![Running](./media/running.png?raw=true "Running") | ![Stopped](./media/stopped.png?raw=true "Stopped")
+![Stopped](./media/stopped.png?raw=true "Stopped") | ![Running](./media/running.png?raw=true "Running")
 
-## Implementation
+## 2.4 Testing
 
-- [flutter_bloc](https://pub.dev/packages/flutter_bloc) for state management.
-
-Code was tested on Android, Windows desktop and Flutter web.
-
-## Testing
+Code was tested on Android and Windows desktop. It should work on MacOS, Linux and
+web as well.
 
 ```bash
 $ flutter test test
