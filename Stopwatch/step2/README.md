@@ -42,7 +42,7 @@ Stopwatch Stopped | Stopwatch Running
 
 I spent about 75 minutes on this step. It's probably a bit too much but I
 added a feature to scroll the list of laps to display the last lap added.
-I cou;d have saved 15 minutes.
+I could have saved 15 minutes.
 
 ```bash
 $ flutter test test
