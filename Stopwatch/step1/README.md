@@ -36,8 +36,7 @@ for the timer.)
 
 I chose a design from
 [Rahmat Raditya](https://dribbble.com/shots/11164774-Clock-Apps-Design-Exploration)
-because I like the color scheme. But I am not planning to replicate the design.
-I'll keep things simple.
+because I like the color scheme. But I am not planning to replicate it and keep things simple.
 
 ![Design](./media/design.png?raw=true "Design")
 
