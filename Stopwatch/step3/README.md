@@ -25,7 +25,7 @@ After you are finished, the project is ready to be submitted!
 
 # 2. Implementation
 
-In this last step we’ll have to deal with a recurring feature of take-home
+In this last step we’ll have to deal with is a common feature of take-home
 tests: JSON serialization / deserialization.
 [`json_serializable`](https://pub.dev/packages/json_serializable)
 is usually my go to package for JSON, but to save time I simply took advantage
