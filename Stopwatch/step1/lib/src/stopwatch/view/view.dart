@@ -19,10 +19,10 @@ class StopwatchView extends StatefulWidget {
   const StopwatchView({Key? key}) : super(key: key);
 
   @override
-  _StopwatchViewState createState() => _StopwatchViewState();
+  StopwatchViewState createState() => StopwatchViewState();
 }
 
-class _StopwatchViewState extends State<StopwatchView> {
+class StopwatchViewState extends State<StopwatchView> {
   bool isRunning = false;
 
   @override

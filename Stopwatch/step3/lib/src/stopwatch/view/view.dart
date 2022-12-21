@@ -113,7 +113,7 @@ class __LapsDisplayState extends State<_LapsDisplay> {
     return BlocBuilder<LapsCubit, LapsState>(
       builder: (BuildContext context, LapsState state) {
         // Jump to end of list when a new item is added so that it is visible.
-        WidgetsBinding.instance?.addPostFrameCallback(
+        WidgetsBinding.instance.addPostFrameCallback(
           (_) => _onAfterBuild(context),
         );
 
